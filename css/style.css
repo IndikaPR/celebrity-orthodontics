@@ -179,46 +179,6 @@ header .container div a img {
   border-radius: 20px;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-header .container {
-  padding-top: 17px;
-  padding-bottom: 27px;
-  display: flex;
-  align-items: center;
-}
-
-header .container div:nth-child(1),
-header .container div:nth-child(3) {
-  width: 100%;
-}
-
-header .container div ul li {
-  margin-right: 90px;
-}
-
-header .container div:nth-child(3) ul li:nth-child(3),
-header .container div:nth-child(1) ul li:nth-child(3) {
-  margin-right: 0;
-}
-
-header .container div a img {
-  margin: 0 50px;
-}
-
-.request-btn {
-  background: #9a339c;
-  color: #fff;
-  padding: 10px 22px;
-  border-radius: 20px;
-}
-
 /*////////////////////////////////*/
 /*SECTION HERO*/
 /*////////////////////////////////*/
