@@ -152,12 +152,6 @@ header .container {
   justify-content: space-between;
 }
 
-/* 
-header .container div:nth-child(1),
-header .container div:nth-child(3) {
-  /* width: 100%; 
-} */
-
 header .container div ul {
   display: flex;
   align-items: center;
@@ -167,6 +161,12 @@ header .container div ul {
 header .container div ul li {
   margin-right: 90px;
 }
+
+/* 
+header .container div:nth-child(1),
+header .container div:nth-child(3) {
+  width: 100%;
+} */
 
 header .container div:nth-child(3) ul li:nth-child(3),
 header .container div:nth-child(1) ul li:nth-child(3) {
@@ -192,12 +192,6 @@ header .container div a img {
 /*////////////////////////////////*/
 /*SECTION HERO*/
 /*////////////////////////////////*/
-.section-hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .section-hero::before {
   content: "";
   position: absolute;
