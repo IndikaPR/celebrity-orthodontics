@@ -548,12 +548,12 @@ header .container div a img {
 
 .section-consultant .circle-pink {
   background: none;
-  border: 15px solid #fee1dd;
+  border: 24px solid #fee1dd;
   position: absolute;
   right: 12%;
   bottom: -10%;
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
 }
 
 .section-consultant .topic-wrapper a {
