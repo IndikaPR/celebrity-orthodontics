@@ -307,7 +307,7 @@ header .container div a img {
 }
 
 .section-welcome .topic-wrapper a {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 /*////////////////////////////////*/
@@ -696,7 +696,7 @@ header .container div a img {
 /*////////////////////////////////*/
 .section-instagram {
   position: absolute;
-  bottom: -12%;
+  top: -270px;
   width: 100%;
   z-index: 10;
 }
