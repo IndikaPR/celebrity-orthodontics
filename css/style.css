@@ -41,6 +41,8 @@ h6 {
 h2 {
   color: #ed9aa2;
   line-height: 47px;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h5 {
@@ -149,10 +151,11 @@ header .container {
   justify-content: space-between;
 }
 
+/* 
 header .container div:nth-child(1),
 header .container div:nth-child(3) {
-  /* width: 100%; */
-}
+  /* width: 100%; 
+} */
 
 header .container div ul {
   display: flex;
@@ -308,6 +311,10 @@ header .container div a img {
   top: 135px;
   right: 0;
   z-index: 5;
+}
+
+.section-welcome .topic-wrapper a {
+  margin-top: 35px;
 }
 
 /*////////////////////////////////*/
