@@ -632,6 +632,7 @@ header .container div a img {
   padding: 50px 95px;
   border-radius: 50px 0 50px 0;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .contact-wrapper .circle {
