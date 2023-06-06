@@ -328,7 +328,8 @@ header .container div a img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 54px;
-  padding: 69px 0;
+  padding-top: 69px;
+  padding-bottom: 92px;
 }
 
 .service-gallery > div {
@@ -359,10 +360,6 @@ header .container div a img {
 }
 
 .circle {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
   background: #ed9aa2;
@@ -370,6 +367,13 @@ header .container div a img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.service-gallery .circle {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .circle p {
@@ -395,6 +399,15 @@ header .container div a img {
 .section-testimonial {
   background: #ffeaec;
   padding-bottom: 148px;
+  position: relative;
+}
+
+.section-testimonial .container > .name {
+  position: absolute;
+  top: 33%;
+  left: 46%;
+  width: 9%;
+  z-index: 5;
 }
 
 .section-testimonial .topic-wrapper {
@@ -448,18 +461,12 @@ header .container div a img {
   padding-left: 0;
 }
 
-.testimonial-img .circle {
+/* .section-testimonial .circle {
   position: absolute;
-  top: 36%;
-  left: -12%;
+  top: 10%;
+  left: 0%;
   z-index: 2;
-  transform: translate(0%, 0%);
-}
-
-.testimonial-img .circle {
-  width: 150px;
-  height: 150px;
-}
+} */
 
 /*////////////////////////////////*/
 /*SECTION COSMETICS*/
