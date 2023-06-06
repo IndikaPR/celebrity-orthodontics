@@ -26,6 +26,7 @@ h1 {
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
+  text-align: center;
 }
 
 h2,
@@ -94,7 +95,7 @@ body p {
 }
 
 section {
-  padding: 40px 0;
+  padding-top: 80px;
 }
 
 button {
@@ -125,7 +126,7 @@ button {
   padding: 23px 110px;
   margin-bottom: 87px;
   font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -152,6 +153,11 @@ header .container {
   justify-content: space-between;
 }
 
+header .container .main-nav:nth-child(1),
+header .container .main-nav:nth-child(3) {
+  width: 100%;
+}
+
 header .container div ul {
   display: flex;
   align-items: center;
@@ -159,14 +165,12 @@ header .container div ul {
 }
 
 header .container div ul li {
-  margin-right: 90px;
+  margin-right: 70px;
 }
 
-/* 
-header .container div:nth-child(1),
-header .container div:nth-child(3) {
-  width: 100%;
-} */
+.mobile-nav {
+  display: none;
+}
 
 header .container div:nth-child(3) ul li:nth-child(3),
 header .container div:nth-child(1) ul li:nth-child(3) {
@@ -192,6 +196,10 @@ header .container div a img {
 /*////////////////////////////////*/
 /*SECTION HERO*/
 /*////////////////////////////////*/
+.section-hero {
+  padding-top: 0;
+}
+
 .section-hero::before {
   content: "";
   position: absolute;
@@ -208,8 +216,8 @@ header .container div a img {
 
 .section-hero .social-media {
   position: absolute;
-  bottom: 30px;
-  right: 0%;
+  bottom: 27px;
+  right: 0;
 }
 
 .section-hero .container {
@@ -263,7 +271,7 @@ header .container div a img {
 }
 
 .section-welcome .container div:nth-child(1) {
-  display: inline-flex;
+  display: flex;
   align-items: end;
   padding-bottom: 60px;
 }
@@ -278,28 +286,22 @@ header .container div a img {
   height: 190px;
 }
 
-.circle-white {
+.welcome-img .circle-white {
   width: 313px;
   height: 313px;
   border: 26px solid #fff;
   border-radius: 50%;
-}
-
-.welcome-img .circle-white {
   position: absolute;
-  top: 71%;
-  right: -70%;
+  top: 75%;
+  right: -65%;
   z-index: 2;
 }
 
-.circle-pink {
+.welcome-img .circle-pink {
   width: 108px;
   height: 108px;
   background: #fee1dd;
   border-radius: 50%;
-}
-
-.welcome-img .circle-pink {
   position: absolute;
   top: 135px;
   right: 0;
@@ -318,11 +320,15 @@ header .container div a img {
   background: #ffeaec;
 }
 
+.section-service .container {
+  padding: 0 80px;
+}
+
 .service-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 54px;
-  padding: 109px 0;
+  padding: 69px 0;
 }
 
 .service-gallery > div {
@@ -354,20 +360,16 @@ header .container div a img {
 
 .circle {
   position: absolute;
-  bottom: -150px;
-  left: 35%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
   background: #ed9aa2;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: 500ms;
   border-radius: 50%;
-}
-
-.service-gallery > div:hover > div {
-  bottom: 60px;
 }
 
 .circle p {
@@ -451,6 +453,7 @@ header .container div a img {
   top: 36%;
   left: -12%;
   z-index: 2;
+  transform: translate(0%, 0%);
 }
 
 .testimonial-img .circle {
@@ -505,6 +508,7 @@ header .container div a img {
   width: 230px;
   height: 230px;
   z-index: 2;
+  transform: translate(0%, 0%);
 }
 
 .section-cosmetics .circle p {
@@ -536,14 +540,16 @@ header .container div a img {
   width: 330px;
   height: 330px;
   border: 30px solid #fff;
+  border-radius: 50%;
 }
 
 .section-consultant .container img {
   position: absolute;
-  top: -75px;
-  left: -50px;
+  top: -28px;
+  left: -51px;
   transform: rotate(16deg);
   opacity: 0.7;
+  width: 28%;
 }
 
 .section-consultant .circle-pink {
@@ -554,12 +560,18 @@ header .container div a img {
   bottom: -10%;
   width: 260px;
   height: 260px;
+  border-radius: 50%;
 }
 
 .section-consultant .topic-wrapper a {
   padding: 17px 57px;
   margin-bottom: 63px;
   margin-top: 30px;
+}
+
+.section-consultant .topic-wrapper {
+  position: relative;
+  z-index: 5;
 }
 
 /*////////////////////////////////*/
@@ -641,6 +653,7 @@ header .container div a img {
   left: -28%;
   width: 250px;
   height: 250px;
+  transform: translate(0%, 0%);
 }
 
 .contact-wrapper .circle p {
@@ -701,7 +714,7 @@ header .container div a img {
   z-index: 10;
 }
 
-.instagram-gallery div {
+.instagram-gallery > div {
   position: relative;
   width: 100%;
   padding-top: 100%;
@@ -730,9 +743,20 @@ header .container div a img {
   text-align: center;
 }
 
-.instagram-btn div {
+.instagram-btn {
+  padding-top: 0;
+}
+
+.instagram-btn > div {
   position: absolute;
-  top: -68%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .instagram-btn p a {
@@ -844,4 +868,208 @@ header .container div a img {
   color: #fff;
   margin-bottom: 40px;
   line-height: 23px;
+}
+
+@media all and (max-width: 1200px) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav:nth-child(2) {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav i {
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .section-hero .social-media a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section-hero .social-media a i {
+    font-size: 30px;
+  }
+
+  .section-welcome .container {
+    display: block;
+  }
+
+  .welcome-img {
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .welcome-img img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .welcome-img .circle-white {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    right: -10%;
+  }
+
+  .welcome-img .circle-pink {
+    width: 120px;
+    height: 120px;
+    top: 270px;
+    right: 110px;
+  }
+
+  .service-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    padding: 0;
+  }
+
+  .service-gallery > div:nth-child(1),
+  .service-gallery > div:nth-child(3) {
+    transform: rotate(0deg);
+  }
+
+  .service-gallery .circle {
+    bottom: 50px;
+    left: 32%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .service-gallery .circle p {
+    font-size: 35px;
+  }
+
+  .section-service .topic-wrapper a {
+    margin-top: 50px;
+  }
+
+  .quottation-left {
+    top: 30px;
+    left: 30px;
+  }
+
+  .quottation-right {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .testimonial-img .circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .section-testimonial .topic-wrapper {
+    padding: 100px 20px;
+  }
+
+  .testimonial-img .circle {
+    top: 34%;
+    left: -16%;
+  }
+
+  .section-cosmetics .topic-wrapper {
+    padding: 100px 20px 50px;
+  }
+
+  .section-cosmetics .circle {
+    top: 0%;
+    left: -22%;
+    width: 196px;
+    height: 195px;
+  }
+
+  .section-consultant .circle-white {
+    top: -34px;
+    left: -16px;
+    width: 150px;
+    height: 150px;
+    border: 13px solid #fff;
+  }
+
+  .section-consultant .circle-pink {
+    border: 13px solid #fee1dd;
+    right: 5%;
+    bottom: -5%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-wrapper {
+    padding: 50px 53px;
+  }
+
+  .contact-wrapper .circle {
+    left: -24%;
+    width: 230px;
+    height: 230px;
+  }
+
+  .section-instagram .instagram-gallery > div:first-child,
+  .section-instagram .instagram-gallery > div:last-child {
+    display: none;
+  }
+
+  .instagram-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .footer-section h6 {
+    text-align: center;
+  }
+
+  .contact-us p {
+    text-align: center;
+  }
+
+  .footer-social-media a:last-child {
+    margin-right: 0;
+  }
+
+  .footer-list-flex {
+    row-gap: 30px;
+  }
+
+  .footer-days {
+    margin-bottom: 30px;
+  }
+
+  .footer-edm {
+    text-align: center;
+  }
+
+  .footer-edm .edm {
+    justify-content: center;
+  }
+
+  .footer-social-media a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-social-media a i {
+    font-size: 30px;
+  }
+
+  .contact-us p {
+    line-height: 30px;
+  }
 }

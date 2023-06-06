@@ -9,6 +9,7 @@ const swiperTestimonial = new Swiper(".section-testimonial .swiper", {
 
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -23,5 +24,6 @@ const swiperCosmetics = new Swiper(".section-cosmetics .swiper", {
 
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
