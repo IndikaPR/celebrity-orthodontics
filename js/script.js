@@ -27,3 +27,12 @@ const swiperCosmetics = new Swiper(".section-cosmetics .swiper", {
     clickable: true,
   },
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Mmenu("#menu", {
+    offCanvas: {
+      position: "right",
+    },
+    theme: "light",
+  });
+});
